@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Random Message Generator</title>
+    </head>
+
+    <body>
+        <nav>
+            <button id="button1" type="button" onclick="generateFunction()">Generate Message!</button>
+            <p id="displayMessage"></p>
+        </nav>
+        <script>
+            function generateFunction() {
+                let number = Math.floor(Math.random() * 6);
+                let message = ' ';
+
+                switch (number) {
+                    case 0:
+                        message = 'You are great!';
+                        break;
+                    case 1:
+                        message = 'You are awesome!';
+                        break;
+                    case 2:
+                        message = 'You are smart!';
+                        break;
+                    case 3:
+                        message = 'You are fabulous!';
+                        break;
+                    case 4:
+                        message = 'You are my best friend!';
+                        break;
+                    case 5:
+                        message = 'Life is awesome!';
+                        break;
+                }
+                document.getElementById("displayMessage").innerHTML = message;
+            }
+
+            
+            
+        </script>
+
+
+    </body>
+</html>
